@@ -40,14 +40,17 @@
         </div>
     </nav>
 
+    <div id="right-side">
     <section id="landing" class="py-2">
         <div class="container">
             <div class="info">
                 <h1>Hi I am Linus Lundqvist</h1>
                 <h2>Interaction Technology and Design Student</h2>
                 <br>
-                <a href="#portfolio" class="btn-main info-btn">View My Work</a>
-                <button class="btn-main info-btn">Contact Me</button>
+                <div class="btn-wrap">
+                    <a href="#portfolio" class="btn-main">View My Work</a>
+                    <a href="#contact" class="btn-main">Contact Me</a>
+                </div>
             </div>
         </div>
     </section>
@@ -164,11 +167,39 @@
         </div>
     </section>
 
-    <section id="about" class="text-align py-3">
+    <section id="about" class="py-3">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="bottom-line"></div>
-            <p class="lead">Here is how you can reach me</p>
+            <p class="lead text-align">My Passion Is Creating Websites</p>
+            <div class="about-container">
+                <p class="primary-text">
+                    My name is Linus Lundqvist and I am 21 years old and am currently studying in my third year of the Master of
+                    Science Programme in Interaction Technology and Design at Umeå University.
+                    <br>
+                    <br>
+                    Before I started my studies at University I studied “Naturvetenskap med inriktning Natur” at upper secondary school/high
+                    school, and worked different kinds of jobs during summer breaks and during my free time. Some of these include working
+                    at a supermarket, warehouse work at “Naturkompaniet” and as a host for an event company. My work at the event company
+                    included taking care of groups of people when they performed activities like paintball and other team-oriented
+                    competitions. I have also done a lot of volunteering at several big outside sport events in my hometown.
+                    <br>
+                    <br>
+                </p>
+                <p class="secondary-text">
+                    After (and during) my studies my dream work would be somewhere where I can use my skills as a UX/UI Designer and
+                    front-end developer to grow the company I work at as well as myself.
+                </p>
+                <img src="/dist/img/linus_blurred.jpg" class="about-img" alt="Picture of Me">
+            </div>
+            <div class="btn-wrap">
+                <a href="/dist/resources/Resume_Linus_Lundqvist.pdf"
+                class="btn-main about-btn" target="_blank">Open my Resume</a>
+            <a href="/dist/resources/Resume_Linus_Lundqvist.pdf"
+                class="btn-main about-btn" download>Download my Resume</a>
+            <a href="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/"
+                class="btn-main about-btn" target="_blank">Read about my education</a>
+            </div>
         </div>
     </section>
 
@@ -176,22 +207,30 @@
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
             <div class="bottom-line"></div>
-            <p class="lead">Here is how you can reach me</p>
+            <p class="lead">Email: linus.lundqvist@gmail.com</p>
             <!-- modify this form HTML and place wherever you want your form -->
             
             <form action="https://formspree.io/f/xayaqwyz" method="POST">
                 <div class="text-fields">
-                    <input type="text" class="text-input name-input" placeholder="Name">
-                    <input type="text" class="text-input subject-input" placeholder="Subject">
-                    <input type="text" class="text-input Email-input" name="_replyto" placeholder="Email Adress">
-                    <input type="text" class="text-input phone-input" placeholder="Phone Number">
-                    <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+                    <input type="text" class="text-input name-input" placeholder="Name...">
+                    <input type="text" class="text-input subject-input" placeholder="Subject...">
+                    <input type="text" class="text-input email-input" name="_replyto" placeholder="Email Adress...">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number...">
+                    <textarea class="text-input message-input" placeholder="Enter Message..."></textarea>
                 </div>
-                <button type="submit" class="btn-dark">Submit</button>
+                <button type="submit" class="btn-main">Submit</button>
             </form>
 
         </div>
     </section>
-
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2020. All Rights Reserved</p>
+            <div class="socials">
+                <a href="">Github</a>
+                <a href="">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
