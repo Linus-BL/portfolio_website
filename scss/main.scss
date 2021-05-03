@@ -98,7 +98,7 @@ html::-webkit-scrollbar-track {
   outline: none;
 
   .avatar {
-    background: rgba(0, 0, 0, 0.1);
+    background: $medium-color;
     padding: 2em 0.5em;
     text-align: center;
 
@@ -262,7 +262,7 @@ html::-webkit-scrollbar-track {
     border-radius: 25px;
     .skill {
       padding: 5%;
-      box-shadow: $light-color 0px 5px 15px;
+      box-shadow: $dark-color 0px 5px 15px;
       img {
         max-width: 200px;
       }
@@ -685,6 +685,28 @@ html::-webkit-scrollbar-track {
         "subject"
         "phone"
         "message";
+    }
+  }
+
+  #project-a {
+    .project-imgs {
+      grid-template-columns: 1fr;
+    }
+    .project-text {
+      padding-top: 1rem;
+      p {
+        font-size: 12px;
+        text-align: left;
+      }
+    }
+    a {
+      margin: auto;
+      font-size: 14px;
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
     }
   }
 
