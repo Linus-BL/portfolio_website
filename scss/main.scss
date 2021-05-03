@@ -1,7 +1,6 @@
 @import "config";
 @import "utilities";
 @import "item_grid";
-@import "media";
 
 // General styles
 * {
@@ -14,7 +13,6 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  padding-left: $menu-width-desktop;
 }
 html,
 body {
@@ -22,6 +20,10 @@ body {
   overflow-x: hidden;
   position: relative;
   scroll-behavior: smooth;
+}
+
+body#main {
+  padding-left: $menu-width-desktop;
 }
 
 p {
@@ -223,8 +225,7 @@ html::-webkit-scrollbar-track {
     grid-template-areas:
       "primary primary img"
       "primary primary img"
-      "secondary secondary secondary"
-      "info info info";
+      "secondary secondary secondary";
 
     //grid areas
     .primary-text {
@@ -235,8 +236,8 @@ html::-webkit-scrollbar-track {
     }
     .about-img {
       grid-area: img;
-      max-height: 400px;
-      width: auto;
+      max-width: 400px;
+      height: auto;
       border-radius: 25px;
       margin-left: 10px;
     }
@@ -245,6 +246,27 @@ html::-webkit-scrollbar-track {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+#skills {
+  color: $light-color;
+  padding: 3rem;
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    text-align: center;
+    background-color: $medium-color;
+    padding: 5rem;
+    border-radius: 25px;
+    .skill {
+      padding: 5%;
+      box-shadow: $light-color 0px 5px 15px;
+      img {
+        max-width: 200px;
+      }
+    }
   }
 }
 
@@ -349,6 +371,31 @@ html::-webkit-scrollbar-track {
         }
       }
     }
+  }
+}
+
+/*Individual project sites*/
+#project-a {
+  color: $light-color;
+  padding: -240px;
+  .project-imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    img {
+      max-height: 200px;
+      border: 2px solid $main-color;
+    }
+  }
+  .project-text {
+    padding-top: 1rem;
+    p {
+      text-align: left;
+    }
+  }
+  a {
+    margin-top: 2.5rem;
   }
 }
 
@@ -465,6 +512,192 @@ html::-webkit-scrollbar-track {
 
     to {
       opacity: 1;
+    }
+  }
+}
+
+//Media Querries
+//Small screens, laptops
+@media screen and (max-width: 1024px) {
+  #about {
+    color: $light-color;
+    .about-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "img img"
+        "primary primary"
+        "primary primary"
+        "secondary secondary";
+
+      .about-img {
+        margin: auto;
+      }
+    }
+  }
+}
+
+//iPads, Tablets.
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 0px !important;
+  }
+
+  .menu {
+    width: $menu-width-smartphone;
+    box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
+    transform: translate3d(-$menu-width-smartphone, 0, 0);
+    transition: all 0.3s ease-in-out;
+
+    .smartphone-menu-trigger {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 100%;
+      background: $medium-color;
+
+      &:before,
+      &:after {
+        content: "";
+        width: 50%;
+        height: 2px;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+
+      &:after {
+        top: 55%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+    }
+
+    ul {
+      margin-top: -60%;
+      li {
+        padding: 1em 1em 1em 1em;
+        font-size: 1.2em;
+      }
+    }
+
+    &:focus {
+      transform: translate3d(0, 0, 0);
+      box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
+
+      .smartphone-menu-trigger {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #landing {
+    .info {
+      display: inline;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .btn-wrap {
+        a {
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  #portfolio {
+    .items {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+  #about {
+    color: $light-color;
+    .about-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 0px 0px;
+      grid-template-areas:
+        "img"
+        "primary"
+        "primar"
+        "secondary";
+
+      .about-img {
+        margin: auto;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .btn-wrap {
+      a {
+        text-align: center;
+        height: 70px;
+        font-size: 10px;
+        padding: 0.5rem 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+
+  #skills {
+    .lead {
+      font-size: 16px;
+    }
+    padding: 1rem;
+    .skills-container {
+      grid-gap: 5px;
+      padding: 1rem;
+      .skill {
+        padding: 5%;
+        box-shadow: none;
+
+        p {
+          font-size: 12px;
+        }
+        img {
+          max-width: 50px;
+        }
+      }
+    }
+  }
+
+  #contact {
+    .text-fields {
+      grid-template-areas:
+        "name"
+        "email"
+        "subject"
+        "phone"
+        "message";
+    }
+  }
+
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 0.2rem;
+      height: 5rem;
+      .socials {
+        margin-top: 5px;
+      }
     }
   }
 }
