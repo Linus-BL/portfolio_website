@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="bg-dark">
+<body id="main" class="bg-dark">
     <script>
         for (i = 0; i < 100; i++) {
             const element1 = document.createElement("div");
@@ -28,10 +28,10 @@
             <h2>Linus <span>Lundqvist</span></h2>
         </header>
         <ul class="list-hover-slide">
-            <li tabindex="0" ><a href="">Home</a></li>
-            <li tabindex="0" ><a href="">Services</a></li>
+            <li tabindex="0" ><a href="#main">Home</a></li>
             <li tabindex="0" ><a href="#portfolio">Portfolio</a></li>
             <li tabindex="0" ><a href="#about">About Me</a></li>
+            <li tabindex="0"><a href="#skills">Skills</a></li>
             <li tabindex="0" ><a href="#contact">Contact</a></li>
         </ul>
         <div class="socials">
@@ -64,106 +64,45 @@
             <div class="items">
                 <div class="item">
                     <div class="item-image">
-                        <img src="img/items/item1.png" alt="">
+                        <img src="img/DCT_Showcase.jpg" alt="">
                     </div>
                     <div class="item-text">
                         <div class="item-text-wrap">
-                            <p class="item-text-category">Design</p>
-                            <h2 class="item-text-title">Great Gradients</h2>
-                            <a href=""><p>Read More</p></a>
+                            <p class="item-text-category">Web Application</p>
+                            <h2 class="item-text-title">DCT Studio</h2>
+                            <a href="dctstudio.html" target="_blank"><p>Read More</p></a>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="item-image">
-                        <img src="img/items/item2.png" alt="">
+                        <img src="img/Vezzo_Showcase.png" alt="">
                     </div>
                     <div class="item-text">
                         <div class="item-text-wrap">
-                            <p class="item-text-category">UI/UX</p>
-                            <h2 class="item-text-title">World Experience</h2>
+                            <p class="item-text-category">Design & P<span style="text-transform:lowercase;">o</span>C Implementation</p>
+                            <h2 class="item-text-title">Food ordering application</h2>
+                            <a href="foodordering.html" target="_blank">
+                                <p>Read More</p>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="item-image">
-                        <img src="img/items/item3.png" alt="">
+                        <img src="img/HappyCat_Showcase.jpg" alt="">
                     </div>
                     <div class="item-text">
                         <div class="item-text-wrap">
-                            <p class="item-text-category">Photography & Design</p>
-                            <h2 class="item-text-title">Vanishing</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-image">
-                        <img src="img/items/item4.png" alt="">
-                    </div>
-                    <div class="item-text">
-                        <div class="item-text-wrap">
-                            <p class="item-text-category">Design</p>
-                            <h2 class="item-text-title">Gap INC</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-image">
-                        <img src="img/items/item5.png" alt="">
-                    </div>
-                    <div class="item-text">
-                        <div class="item-text-wrap">
-                            <p class="item-text-category">Mobile UI Design</p>
-                            <h2 class="item-text-title">Face The Experience</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-image">
-                        <img src="img/items/item6.png" alt="">
-                    </div>
-                    <div class="item-text">
-                        <div class="item-text-wrap">
-                            <p class="item-text-category">Design Concept</p>
-                            <h2 class="item-text-title">Bezier Curves</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-image">
-                        <img src="img/items/item7.png" alt="">
-                    </div>
-                    <div class="item-text">
-                        <div class="item-text-wrap">
-                            <p class="item-text-category">Photography</p>
-                            <h2 class="item-text-title">Dock Ponder</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-image">
-                        <img src="img/items/item8.png" alt="">
-                    </div>
-                    <div class="item-text">
-                        <div class="item-text-wrap">
-                            <p class="item-text-category">Web Applications</p>
-                            <h2 class="item-text-title">Resturant App</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item-image">
-                        <img src="img/items/item9.png" alt="">
-                    </div>
-                    <div class="item-text">
-                        <div class="item-text-wrap">
-                            <p class="item-text-category">Social Network Concept</p>
-                            <h2 class="item-text-title">Friend Feed</h2>
+                            <p class="item-text-category">I<span style="text-transform:lowercase;">o</span>T Implementation</p>
+                            <h2 class="item-text-title">HappyCat</h2>
+                            <a href="happycat.html" target="_blank">
+                                <p>Read More</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="" class="btn-main">View More</a>
         </div>
     </section>
 
@@ -187,6 +126,9 @@
                     <br>
                 </p>
                 <p class="secondary-text">
+                    During my studies have I also experienced how it is to be a project leader several times and have also taken a course in
+                    project Project management.
+                    <br>
                     After (and during) my studies my dream work would be somewhere where I can use my skills as a UX/UI Designer and
                     front-end developer to grow the company I work at as well as myself.
                 </p>
@@ -199,6 +141,54 @@
                 class="btn-main about-btn" download>Download my Resume</a>
             <a href="https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/"
                 class="btn-main about-btn" target="_blank">Read about my education</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="bottom-line"></div>
+            <p class="lead text-align">These are some of the tecnologies I have Experience with</p>
+            <p class="lead text-align">My experties are in HTML/CSS/SCSS/JS And Xd</p>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="/dist/img/icons/devicon-master/devicon-master/icons/html5/html5-original.svg" alt="">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill">
+                <img src="/dist/img/icons/devicon-master/devicon-master/icons/css3/css3-original.svg" alt="">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill">
+                <img src="/dist/img/icons/devicon-master/devicon-master/icons/sass/sass-original.svg" alt="">
+                    <p>SCSS/Sass</p>
+                </div>
+                <div class="skill">
+                <img src="/dist/img/icons/devicon-master/devicon-master/icons/javascript/javascript-original.svg" alt="">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                <img src="/dist/img/icons/devicon-master/devicon-master/icons/xd/xd-line.svg" alt="">
+                    <p>Adobe XD</p>
+                </div>
+                <div class="skill">
+                <img src="/dist/img/icons/devicon-master/devicon-master/icons/dotnetcore/dotnetcore-original.svg" alt="">
+                    <p>.NET Core</p>
+                </div>
+                <div class="skill">
+                <img src="/dist/img/icons/devicon-master/devicon-master/icons/java/java-original.svg" alt="">
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                <img src="/dist/img/icons/devicon-master/devicon-master/icons/c/c-original.svg" alt="">
+                    <p>C</p>
+                </div>
+                <div class="skill">
+                <img src="/dist/img/icons/devicon-master/devicon-master/icons/csharp/csharp-original.svg" alt="">
+                    <p>C#</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -225,7 +215,7 @@
     </section>
     <footer id="main-footer">
         <div class="footer-content container">
-            <p>Copyright &copy; 2020. All Rights Reserved</p>
+            <p>Copyright &copy; 2021. All Rights Reserved</p>
             <div class="socials">
                 <a href="">Github</a>
                 <a href="">LinkedIn</a>
